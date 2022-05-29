@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Quicksand';
+    background-color: #0891a319;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+h2 {
+    color: steelblue;
+}
+
+h3 {
+    color: #5a5a61;
+}
+
+p {
+    text-align: justify;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #be273d;
+    text-align: center;
+    color: whitesmoke;
+}
+
+nav {
+    background-color: #e6c6ca;
+    padding: 1px;
+}
+
+header {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+a:link {
+   color: #163259;
+   text-decoration: none;
+}
+  
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+a:visited {
+   color: #5a5a61;
+}
+  
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+a:hover {
+   font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.profile img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.table {
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    color: whitesmoke;
+    background-color: steelblue;
+    text-align: center;
+    font-weight: bold;
+}
+
+table, td {
+    border: 1px solid steelblue;
+    margin: auto;
+}
+
+thead, tfoot {
+    background-color: steelblue;
+    color: whitesmoke;
+
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.cast li {
+    text-decoration: none;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+.cast li,
+.cast li img,
+.cast li span {
+    border-radius: 5px;
+}
+
+.cast li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 120px;
+    color: whitesmoke;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+}
+
+.cast li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.clear {
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
